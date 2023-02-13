@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h2>input elements</h2>
+    <form action="../img/cute_dog.jpg">
+      <!-- 
+required 필수 입력 속성. 예전에는 required = "required"로 표현 됨
+checked: 미리 선택을 해 놓는 속성. radio, checkbox 엘리먼트에 사용
+-->
+
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="male">Female</label><br />
+      <input type="radio" id="other" name="gender" value="other" required />
+      <label for="other">Other</label><br />
+      <hr />
+
+      <label><input type="radio" id="red" name="colors" value="red" />Red</label><br />
+      <label><input type="radio" id="greed" name="colors" value="greed" />Greed</label><br />
+      <label><input type="radio" id="blue" name="colors" value="blue" />Blue</label><br />
+
+      <input type="checkbox" id="fruit01" name="fruit" value="Apple" required />
+      <label for="fruit1">I have a Apple</label><br />
+      <input type="checkbox" id="fruit02" name="fruit" value="Orange" required />
+      <label for="fruit2">I have a orange</label><br />
+      <input type="checkbox" id="fruit03" name="fruit" value="Lemon" required />
+      <label for="fruit3">I have a lemon</label><br />
+      <hr />
+
+      <input type="checkbox" id="vehicle1" name="vehicle1" value: "bike" checked>
+      <label for="vehicale2">I have a Apple</label><br />
+      <input type="checkbox" id="vehicle2" name="vehicle2" value: "car" required>
+      <label for="vehicle2">I have a orange</label><br />
+      <input type="checkbox" id="vehicle3" name="vehicle3" value: "boat" required>
+      <label for="vehicle3>">I have a lemon</label><br />
+      <hr />
+
+      <!-- input type="image : submit 버튼과 동일한 역할. 버튼을 이미지로 설정 가능. 
+        불필요한 마우스의 클릭 지점의 x,y축 좌표값을 같이 붙여 보낸다.
+    "-->
+      아래의 이미지를 클릭해보세요~<br />
+      <input type="image" src="../img/submit.org" style="border-radius: 5px" alt="제출버튼" title="submit버튼을 이미지로" />
+    </form>
+  </body>
+</html>

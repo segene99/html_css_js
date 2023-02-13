@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>form 요소</title>
+    <style>
+      form {
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The form attribute</h2>
+    <!-- action 속성, label 요소, input 요소-->
+    <form action="19form01.html" method="get">
+      <label for="firstname">Firstname : </label>
+      <input type="text" id="firstname" name="firstname" value="홍" /><br /><br />
+
+      <label for="lastname">Lastname : </label>
+      <input type="text" id="lastname" name="lastname" value="길동" /><br /><br />
+
+      <label for="middlename">Middlename : </label>
+      <input type="text" id="middlename" name="middlename" value="중간" /><br /><br />
+
+      <label for="job">job : </label>
+      <input type="text" id="job" name="job" value="학생" /><br /><br />
+
+      <input type="submit" value="가입하기" />
+    </form>
+    <br />
+    <!-- form 밖에 있어서 값전송 안됨-->
+    <input type="text" id="etcInfo" name="etcInfo" placeholder="정보를 입력하세요" /><br /><br />
+    <label for="etcInfo">그외 정보 입력:</label>
+  </body>
+</html>
