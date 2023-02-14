@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>border2</title>
+    <style>
+        table { 
+            width: 100%; font-family: Georgia;font-style: italic;
+            border: 1px solid #000000; border-collapse: collapse;
+        }
+        table td{
+            border: 1px solid #ff0000; padding:10px 20px;
+        }
+        table.none {
+            border-style: none;
+        }
+        table.hidden {
+            border-style: hidden;
+        }
+    </style>
+</head>
+<body>
+<h1>border-style: none;</h1>
+<table class="none">
+    <tr><td>Lorem</td><td>Ipsum</td></tr>
+    <tr><td>dolor</td><td>amet</td></tr>
+    <tr><td>phasellus</td><td>mauris</td></tr>
+</table>
+
+<h1>border-style: hidden;</h1>
+<table class="hidden">
+    <tr><td>Lorem</td><td>Ipsum</td></tr>
+    <tr><td>dolor</td><td>amet</td></tr>
+    <tr><td>phasellus</td><td>mauris</td></tr>
+</table>
+
+
+</body>
+</html>
