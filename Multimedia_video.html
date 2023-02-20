@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      video {
+        width: 600px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>video태그</h1>
+    <p>미디어 파일을 재생할 수 있도록 지원해주는 요소임. 속성은 audio와 동일함</p>
+    <video src="../video/Painting.mp4" controls autoplay muted loop></video>
+
+    <h1>source 태그</h1>
+    <p>여러 미디어 파일을 한꺼번에 지정할 수 있는 요소임</p>
+    <dl>
+      <dt>속성값 둘</dt>
+      <dd>src: 미디어 파일 경로 지정함.</dd>
+      <dd>type: 미디어 파일의 형식을(타입) 웹 브라우저에서 미리 알려줌. 해당 파일의 재생 가능 여부를 확인할 수 있다.</dd>
+    </dl>
+
+    <video controls autoplay>
+      <!-- <source src="../video/soundofnature.mp4" type="video/mp4" /> -->
+      <!-- <source src="../video/Painting.webm" type="video/webm" /> -->
+      이 브라우저는 video를 지원하지 않습니다.
+    </video>
+  </body>
+</html>
