@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      var a = 10,
+        b = 10,
+        m = 30,
+        n = 40;
+
+      // || 연산자: 조건 중 하나가 참이면 참
+      // && 연산자: 조건 모두 다 참이어야만 참
+      var result;
+      result = a > b || b > m || m > n;
+      document.write(result, "<br>");
+
+      result = a > b || m <= n || b >= m;
+      document.write(result, "<br>");
+
+      result = a <= b && b >= m && m <= n;
+      document.write(result, "<br>");
+
+      result = a <= b && b <= m && m <= n;
+      document.write(result, "<br>");
+
+      result = !(a > b);
+      document.write(result, "<br>");
+    </script>
+  </head>
+  <body></body>
+</html>

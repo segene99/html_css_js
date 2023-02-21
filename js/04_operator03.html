@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      // 자바스크립트의 == 연산자는 다른 언어와는 다르게 강제 형변환을 실행한다
+      document.write(254 == "254", "<br>"); //true
+      document.write(false == null, "<br>"); //false
+      document.write(false == Boolean(null), "<br>"); //true
+      document.write(false == undefined, "<br>"); //false
+      document.write(false == 0, "<br>"); //true
+      document.write(true == 1, "<br>"); //true
+      document.write(true != 2, "<br>"); //true
+      document.write(true != Boolean(2), "<br>"); //false
+      document.write(undefined == null, "<br><hr>"); //true
+
+      document.write(254 === "254", "<br>"); //false
+      document.write(false === null, "<br>"); //false
+      document.write(false === undefined, "<br>"); //false
+      document.write(false === 0, "<br>"); //false
+      document.write(true === 1, "<br>"); //false
+      document.write(true !== 2, "<br>"); //true
+      document.write(undefined === null, "<br><hr>"); //false
+    </script>
+  </head>
+  <body></body>
+</html>
